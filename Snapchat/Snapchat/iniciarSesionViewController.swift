@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class iniciarSesionViewController: UIViewController {
 
@@ -21,6 +22,25 @@ class iniciarSesionViewController: UIViewController {
     
     
     @IBAction func iniciarSesionTapped(_ sender: Any) {
+        
+        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in print("Intentando iniciar sesion")
+            if error != nil {
+                print("Tenemos el siguiente error:\(error)")
+                FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: {
+                    (user, error) in print("Intentando crear un usuario")
+                    if error != nil{
+                        print("Tenemos el error \(error)")
+                    }else{
+                        print("El usuario fue creado exitosamente")
+                        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+                    }
+                })
+            }else{
+                print ("Inicio de sesion exitoso")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+            }
+        })
+        
     }
 
 
