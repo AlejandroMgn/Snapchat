@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EDA01048F70B1C3EDAB988C /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1D67F9F5612F22DAE1E1E6 /* Pods_Snapchat.framework */; };
 		A977F7E71ED323B90069CE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F7E61ED323B90069CE37 /* AppDelegate.swift */; };
-		A977F7E91ED323B90069CE37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F7E81ED323B90069CE37 /* ViewController.swift */; };
+		A977F7E91ED323B90069CE37 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F7E81ED323B90069CE37 /* iniciarSesionViewController.swift */; };
 		A977F7EC1ED323B90069CE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977F7EA1ED323B90069CE37 /* Main.storyboard */; };
 		A977F7EE1ED323B90069CE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A977F7ED1ED323B90069CE37 /* Assets.xcassets */; };
 		A977F7F11ED323B90069CE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977F7EF1ED323B90069CE37 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		738EF8C5DD66F6A7F08F6BB1 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		A977F7E31ED323B90069CE37 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A977F7E61ED323B90069CE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A977F7E81ED323B90069CE37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A977F7E81ED323B90069CE37 /* iniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iniciarSesionViewController.swift; sourceTree = "<group>"; };
 		A977F7EB1ED323B90069CE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A977F7ED1ED323B90069CE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A977F7F01ED323B90069CE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A977F7E61ED323B90069CE37 /* AppDelegate.swift */,
-				A977F7E81ED323B90069CE37 /* ViewController.swift */,
+				A977F7E81ED323B90069CE37 /* iniciarSesionViewController.swift */,
 				A977F7EA1ED323B90069CE37 /* Main.storyboard */,
 				A977F7ED1ED323B90069CE37 /* Assets.xcassets */,
 				A977F7F81ED324790069CE37 /* GoogleService-Info.plist */,
@@ -216,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A977F7E91ED323B90069CE37 /* ViewController.swift in Sources */,
+				A977F7E91ED323B90069CE37 /* iniciarSesionViewController.swift in Sources */,
 				A977F7E71ED323B90069CE37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +383,7 @@
 				A977F7F71ED323B90069CE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
